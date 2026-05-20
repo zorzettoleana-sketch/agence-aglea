@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGLÉA | Agence d'événementiel Mode - Bordeaux</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --ag-blue: #2446F1;
+      --ag-light-blue: #7EA0FD;
+    }
+
+    .font-title {
+      font-family: 'Cormorant Garamond', serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .font-body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .text-ag-blue {
+      color: var(--ag-blue);
+    }
+
+    .bg-ag-blue {
+      background-color: var(--ag-blue);
+    }
+
+    .nav-link {
+      transition: color 0.25s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--ag-blue);
+    }
+
+    /* Dégradé HERO */
+    .hero-gradient {
+      background: linear-gradient(to bottom,
+          rgba(255, 255, 255, 0) 82%,
+          rgba(255, 255, 255, 0.6) 92%,
+          rgba(255, 255, 255, 1) 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black font-body">
+
+  <!-- NAVIGATION (fondu blanc semi-transparent au scroll) -->
+  <nav id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <!-- Fond en fondu -->
+    <div id="header-bg"
+      class="absolute inset-0 bg-white/70 opacity-0 transition-opacity duration-300 pointer-events-none border-b border-black/10">
+    </div>
+
+    <!-- Contenu -->
+    <div class="relative px-8 py-6 flex justify-between items-center">
+      <a href="#">
+        <img src="image/logo agléa.png" alt="AGLÉA" class="h-8 w-auto" />
+      </a>
+
+      <div class="space-x-8 uppercase text-xs tracking-widest text-black">
+        <a href="nos talents.html" class="nav-link">NOS TALENTS</a>
+        <a href="cagnotte.html" class="nav-link">CAGNOTTE</a>
+        <a href="participer.html" class="nav-link">PARTICIPER</a>
+        <a href="evenement.html" class="nav-link">ÉVÈNEMENT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen overflow-hidden flex items-center justify-center">
+    <img src="image/hero.png" alt="Equipe Agléa" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-gradient"></div>
+  </section>
+
+  <!-- AGENCE -->
+  <section id="agence" class="py-28 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+
+      <div class="relative">
+        <div class="bg-ag-blue absolute -top-4 -left-4 w-3/4 h-[480px] -z-10"></div>
+        <img src="image/DSC03084.jpg" alt="Mode" class="w-full h-[480px] object-cover object-top grayscale" />
+      </div>
+
+      <div>
+        <h2 class="font-title text-4xl mb-10 border-b border-black pb-4">L’Agence</h2>
+
+        <h3 class="font-title text-ag-blue text-lg mb-6 italic text-right">
+          Révéler les talents de demain
+        </h3>
+
+        <p class="mb-6">
+          Agléa est une agence d’événementiel mode née à Bordeaux, créée pour révéler et accompagner les jeunes talents
+          de la scène créative.
+          <strong>Créateurs, mannequins, photographes</strong> : nous leur offrons bien plus qu’une vitrine, une
+          véritable scène d’expression professionnelle.
+        </p>
+
+        <p>
+          Chaque défilé est pensé comme une expérience sensorielle et émotionnelle,
+          où l’esthétique rencontre la narration et où l’art devient vivant.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VALEURS -->
+  <section id="valeurs" class="bg-ag-blue text-white py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-title text-3xl text-center mb-20 tracking-widest">Nos valeurs</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center">
+        <div>
+          <span class="text-4xl block mb-4">01</span>
+          <h4 class="font-title text-xl mb-2">Créativité</h4>
+          <p class="text-xs uppercase opacity-80">Imaginer autrement</p>
+        </div>
+
+        <div class="border-l border-white/30 pl-6">
+          <span class="text-4xl block mb-4">02</span>
+          <h4 class="font-title text-xl mb-2">Inclusion</h4>
+          <p class="text-xs uppercase opacity-80">Une place pour chacun</p>
+        </div>
+
+        <div class="border-l border-white/30 pl-6">
+          <span class="text-4xl block mb-4">03</span>
+          <h4 class="font-title text-xl mb-2">Diversité</h4>
+          <p class="text-xs uppercase opacity-80">Toutes les identités</p>
+        </div>
+
+        <div class="border-l border-white/30 pl-6">
+          <span class="text-4xl block mb-4">04</span>
+          <h4 class="font-title text-xl mb-2">Engagement</h4>
+          <p class="text-xs uppercase opacity-80">Mode responsable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENEMENT -->
+  <section id="evenement" class="py-24 px-6 bg-slate-50 overflow-hidden">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center gap-16">
+
+        <div class="w-full md:w-1/2 text-left">
+          <span class="text-ag-blue uppercase tracking-[0.3em] text-[10px] font-bold mb-4 block">
+            Une expérience mode immersive
+          </span>
+
+          <h2 class="font-title text-5xl md:text-6xl mb-8 leading-tight italic">
+            Le défilé <span class="not-italic font-black">Agléa</span>
+          </h2>
+
+          <div class="space-y-6 text-gray-700 leading-relaxed max-w-lg text-lg">
+            <p>
+              Agléa prépare son premier défilé de mode à <span class="font-semibold text-black">Bordeaux</span>.
+              Un événement pensé comme une scène vivante, où créateurs émergents et artistes se rencontrent.
+            </p>
+            <p class="text-sm border-l-2 pl-6 italic" style="border-color: var(--ag-blue);">
+              Plus qu’un défilé, une expérience artistique, humaine et engagée qui redéfinit les codes de la scène
+              locale.
+            </p>
+          </div>
+
+          <div class="mt-12">
+            <a href="evenement.html"
+              class="group relative inline-flex items-center gap-4 overflow-hidden border border-black px-12 py-4 text-xs uppercase tracking-widest transition-all hover:pl-16">
+              <span class="absolute left-0 -translate-x-full transition-all group-hover:translate-x-6">→</span>
+              <span class="transition-all">Découvrir l'événement</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 relative">
+          <div class="aspect-[3/4] bg-gray-200 overflow-hidden shadow-2xl">
+            <img src="image/5579d8a377ed31a55bd079fb00409822.jpg" alt="Backstage défilé"
+              class="w-full h-full object-cover hover:scale-105 transition duration-700">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 border-t-2 border-l-2 border-black hidden md:block"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉQUIPE -->
+  <section id="equipe" class="py-28 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="font-title text-4xl mb-4">L’équipe</h2>
+      <p class="text-ag-blue uppercase tracking-widest text-xs mb-16">
+        Le cœur battant d’Agléa
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-1">
+
+        <!-- Membre 1 -->
+        <div class="relative group overflow-hidden">
+          <div class="aspect-[2/3] bg-gray-200">
+            <img src="image/_DSC1938.jpg" alt="Team"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white">
+            <div class="translate-y-10 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+              <p class="font-bold text-[9px] uppercase tracking-widest mb-1">Fondatrice</p>
+              <p class="font-title text-xl">Direction Créative</p>
+              <p
+                class="text-[10px] mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">
+                Vision artistique globale, direction des événements et stratégie de marque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membre 2 -->
+        <div class="relative group overflow-hidden">
+          <div class="aspect-[2/3] bg-gray-200">
+            <img src="image/_DSC1904.jpg" alt="Team"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white">
+            <div class="translate-y-10 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+              <p class="font-bold text-[9px] uppercase tracking-widest mb-1">Production</p>
+              <p class="font-title text-xl">Curation Talents</p>
+              <p
+                class="text-[10px] mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">
+                Identification et accompagnement des mannequins et créateurs émergents.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membre 3 -->
+        <div class="relative group overflow-hidden">
+          <div class="aspect-[2/3] bg-gray-200">
+            <img src="image/_DSC1891.jpg" alt="Team"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700 group-hover:scale-105">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent text-white">
+            <div class="translate-y-10 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+              <p class="font-bold text-[9px] uppercase tracking-widest mb-1">Solidarité</p>
+              <p class="font-title text-xl">Relations Associations</p>
+              <p
+                class="text-[10px] mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">
+                Gestion des partenariats caritatifs et coordination des engagements sociaux.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-black text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto border-t border-white/20 pt-12">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+
+        <img src="image/logo agléa.png" alt="AGLÉA" class="h-9 w-auto" />
+
+        <div class="flex gap-8 uppercase text-xs tracking-widest">
+          <a href="https://www.instagram.com/aglea.agence/" target="_blank" rel="noopener noreferrer"
+            class="hover:text-ag-blue transition">Instagram</a>
+          <a href="https://www.tiktok.com/@agence.aglea" target="_blank" rel="noopener noreferrer"
+            class="hover:text-ag-blue transition">TikTok</a>
+          <a href="mailto:agenceaglea@gmail.com" class="hover:text-ag-blue transition">Email</a>
+        </div>
+
+        <div class="text-center md:text-right">
+          <p class="text-xs uppercase tracking-widest mb-2">Bordeaux, France</p>
+          <p class="text-xs opacity-50">© 2026 AGLÉA — Tous droits réservés</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT SCROLL HEADER (fondu) -->
+  <script>
+    const headerBg = document.getElementById('header-bg');
+
+    function onScroll() {
+      const show = window.scrollY > 30;
+      headerBg.classList.toggle('opacity-0', !show);
+      headerBg.classList.toggle('opacity-100', show);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+
+</body>
+
+</html>

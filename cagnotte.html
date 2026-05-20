@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGLÉA | La Cagnotte - Les Liens du Cœur</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ag-blue: #2446F1;
+            --ag-light-blue: #7EA0FD;
+        }
+
+        .font-title {
+            font-family: 'Cormorant Garamond', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .font-body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .text-ag-blue {
+            color: var(--ag-blue);
+        }
+
+        .bg-ag-blue {
+            background-color: var(--ag-blue);
+        }
+
+        .nav-link {
+            transition: color 0.25s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--ag-blue);
+        }
+
+        /* Dégradé HERO */
+        .hero-gradient {
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0) 70%,
+                    rgba(255, 255, 255, 1) 100%);
+        }
+
+        .progress-bar {
+            height: 2px;
+            background: rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: var(--ag-blue);
+            width: 35%;
+            /* Exemple de progression */
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black font-body">
+
+    <!-- NAVIGATION -->
+    <nav id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div id="header-bg"
+            class="absolute inset-0 bg-white/70 opacity-0 transition-opacity duration-300 pointer-events-none border-b border-black/10">
+        </div>
+
+        <div class="relative px-8 py-6 flex justify-between items-center">
+            <a href="gemini.html">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-8 w-auto" />
+            </a>
+
+            <div class="space-x-8 uppercase text-xs tracking-widest text-black">
+                <a href="nos talents.html" class="nav-link">NOS TALENTS</a>
+                <a href="cagnotte.html" class="nav-link">CAGNOTTE</a>
+                <a href="participer.html" class="nav-link">PARTICIPER</a>
+                <a href="evenement.html" class="nav-link">ÉVÈNEMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO CAGNOTTE -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-100">
+        <!-- Image placeholder, will be updated with generated image if available -->
+        <img src="image/cagnotte_hero.png" alt="Soutien Agléa"
+            class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 brightness-90 shadow-2xl" />
+        <div class="absolute inset-0 hero-gradient"></div>
+
+        <div class="relative text-center z-10 px-6 max-w-3xl">
+            <p class="text-ag-blue uppercase tracking-[0.4em] text-[10px] font-bold mb-6">Un Geste pour la Vie</p>
+            <h1 class="font-title text-5xl md:text-7xl mb-6 italic">La Cagnotte</h1>
+            <p class="text-sm md:text-base leading-relaxed text-gray-700 font-light">
+                Chaque création, chaque pas sur le podium et chaque euro récolté nous rapproche de notre objectif :
+                soutenir les enfants nés avec des malformations cardiaques.
+            </p>
+        </div>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+            <div class="space-y-12">
+                <h2 class="font-title text-4xl leading-tight">Pourquoi<br><span class="text-ag-blue italic">donner
+                        ?</span></h2>
+                <div class="space-y-6 text-gray-700 leading-relaxed">
+                    <p>
+                        L'association <strong class="text-black font-semibold">Les Liens du Cœur</strong> œuvre
+                        quotidiennement au sein du CHU de Bordeaux pour offrir un avenir plus serein aux petits
+                        guerriers et à leurs familles.
+                    </p>
+                    <p>
+                        Votre contribution finance des équipements médicaux de pointe, des ateliers d'art-thérapie et
+                        surtout la construction de la <strong class="text-black font-semibold">Maison des
+                            Parents</strong>, un lieu refuge indispensable pendant l'hospitalisation.
+                    </p>
+                </div>
+
+                <!-- PROGRESS BOX -->
+                <div class="border border-black/5 bg-gray-50 p-10 space-y-6">
+                    <div class="flex justify-between items-end">
+                        <span class="font-title text-lg italic">Objectif Maison des Parents</span>
+                        <span class="text-ag-blue font-bold">35%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-widest opacity-50">Campagne Saison 2026</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12">
+                <div class="bg-white p-8 border border-black/5 hover:shadow-xl transition-shadow">
+                    <h3 class="font-title text-xl mb-4 italic text-ag-blue">100% Transparence</h3>
+                    <p class="text-xs leading-relaxed text-gray-500">
+                        La totalité des fonds récoltés est reversée directement à l'association.</p>
+                </div>
+                <div class="bg-white p-8 border border-black/5 hover:shadow-xl transition-shadow">
+                    <h3 class="font-title text-xl mb-4 italic text-ag-blue">Impact Local</h3>
+                    <p class="text-xs leading-relaxed text-gray-500">
+                        Votre don agit directement sur le territoire bordelais, au sein de l'un des centres de
+                        cardiologie pédiatrique les plus importants de France.
+                    </p>
+                </div>
+                <div class="pt-6">
+                    <a href="https://www.lesliensducoeur.org" target="_blank"
+                        class="block w-full bg-ag-blue text-white text-center py-6 uppercase text-xs tracking-[0.3em] hover:bg-black transition duration-500">
+                        Accéder à la cagnotte officielle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto border-t border-white/20 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-9 w-auto" />
+                <div class="flex gap-8 uppercase text-xs tracking-widest">
+                    <a href="https://www.instagram.com/aglea.agence/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">Instagram</a>
+                    <a href="https://www.tiktok.com/@agence.aglea" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">TikTok</a>
+                    <a href="mailto:agenceaglea@gmail.com" class="hover:text-ag-blue transition">Email</a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs uppercase tracking-widest mb-2">Bordeaux, France</p>
+                    <p class="text-xs opacity-50">© 2026 AGLÉA — Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SCROLL -->
+    <script>
+        const headerBg = document.getElementById('header-bg');
+        function onScroll() {
+            const show = window.scrollY > 30;
+            headerBg.classList.toggle('opacity-0', !show);
+            headerBg.classList.toggle('opacity-100', show);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+</body>
+
+</html>

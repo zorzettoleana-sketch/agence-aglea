@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGLÉA | Participer - Devenir Talent</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ag-blue: #2446F1;
+            --ag-light-blue: #7EA0FD;
+        }
+
+        .font-title {
+            font-family: 'Cormorant Garamond', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .font-body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .text-ag-blue {
+            color: var(--ag-blue);
+        }
+
+        .bg-ag-blue {
+            background-color: var(--ag-blue);
+        }
+
+        .nav-link {
+            transition: color 0.25s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--ag-blue);
+        }
+
+        /* Dégradé HERO */
+        .hero-gradient {
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0) 70%,
+                    rgba(255, 255, 255, 1) 100%);
+        }
+
+        input,
+        textarea,
+        select {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--ag-blue) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black font-body">
+
+    <!-- NAVIGATION -->
+    <nav id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div id="header-bg"
+            class="absolute inset-0 bg-white/70 opacity-0 transition-opacity duration-300 pointer-events-none border-b border-black/10">
+        </div>
+
+        <div class="relative px-8 py-6 flex justify-between items-center">
+            <a href="gemini.html">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-8 w-auto" />
+            </a>
+
+            <div class="space-x-8 uppercase text-xs tracking-widest text-black">
+                <a href="nos talents.html" class="nav-link">NOS TALENTS</a>
+                <a href="cagnotte.html" class="nav-link">CAGNOTTE</a>
+                <a href="participer.html" class="nav-link">PARTICIPER</a>
+                <a href="evenement.html" class="nav-link">ÉVÈNEMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO PARTICIPER -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-50">
+        <img src="image/participer_hero.png" alt="Contact Agléa"
+            class="absolute inset-0 w-full h-full object-cover grayscale opacity-60" />
+        <div class="absolute inset-0 hero-gradient"></div>
+
+        <div class="relative text-center z-10 px-6 max-w-2xl">
+            <p class="text-ag-blue uppercase tracking-[0.4em] text-[10px] font-bold mb-6">Collaboration</p>
+            <h1 class="font-title text-5xl md:text-7xl mb-4 italic">Rejoindre l'aventure</h1>
+            <p class="text-xs uppercase tracking-[0.3em] opacity-50">Mannequins • Créateurs • Partenaires</p>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+            <!-- Info Column -->
+            <div class="space-y-12">
+                <div>
+                    <h3 class="font-title text-xl mb-4 italic">Suivez-nous</h3>
+                    <div class="space-y-4">
+                        <a href="https://www.instagram.com/aglea.agence/" target="_blank"
+                            class="block text-xs uppercase tracking-widest opacity-60 hover:opacity-100 transition">Instagram
+                            — @aglea.agence</a>
+                        <a href="https://www.tiktok.com/@agence.aglea" target="_blank"
+                            class="block text-xs uppercase tracking-widest opacity-60 hover:opacity-100 transition">TikTok
+                            — @agence.aglea</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-title text-xl mb-4 italic">Email</h3>
+                    <a href="mailto:agenceaglea@gmail.com"
+                        class="text-xs uppercase tracking-widest opacity-60 hover:opacity-100 transition">agenceaglea@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Form Column -->
+            <div class="md:col-span-2">
+                <form action="https://formsubmit.co/agenceaglea@gmail.com" method="POST" enctype="multipart/form-data"
+                    class="space-y-10">
+                    <!-- Config FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nouvelle candidature Agléa">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest opacity-50">Nom Complet</label>
+                            <input type="text" name="nom" required class="w-full bg-transparent py-2 text-sm"
+                                placeholder="Votre nom...">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest opacity-50">Adresse Email</label>
+                            <input type="email" name="email" required class="w-full bg-transparent py-2 text-sm"
+                                placeholder="votre@email.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest opacity-50">Vous êtes...</label>
+                            <select name="profil"
+                                class="w-full bg-transparent py-2 text-sm appearance-none cursor-pointer">
+                                <option value="Mannequin">Mannequin</option>
+                                <option value="Createur">Créateur de mode</option>
+                                <option value="Partenaire">Partenaire / Presse</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest opacity-50">Portfolio / Photos (PDF,
+                                JPG)</label>
+                            <input type="file" name="portfolio" multiple
+                                class="w-full bg-transparent py-1.5 text-[10px] uppercase tracking-widest cursor-pointer file:mr-4 file:py-1 file:px-4 file:border-0 file:text-[9px] file:uppercase file:tracking-widest file:bg-black/5 file:text-black hover:file:bg-black hover:file:text-white transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] uppercase tracking-widest opacity-50">Message</label>
+                        <textarea name="message" rows="4" class="w-full bg-transparent py-2 text-sm resize-none"
+                            placeholder="Parlez-nous de vous ou joignez un lien..."></textarea>
+                    </div>
+
+                    <div class="pt-6">
+                        <button type="submit"
+                            class="bg-black text-white px-12 py-5 uppercase text-[10px] tracking-[0.3em] hover:bg-ag-blue transition-all duration-500 shadow-xl">
+                            Envoyer la demande
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto border-t border-white/20 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-9 w-auto" />
+                <div class="flex gap-8 uppercase text-xs tracking-widest">
+                    <a href="https://www.instagram.com/aglea.agence/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">Instagram</a>
+                    <a href="https://www.tiktok.com/@agence.aglea" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">TikTok</a>
+                    <a href="mailto:agenceaglea@gmail.com" class="hover:text-ag-blue transition">Email</a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs uppercase tracking-widest mb-2">Bordeaux, France</p>
+                    <p class="text-xs opacity-50">© 2026 AGLÉA — Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SCROLL -->
+    <script>
+        const headerBg = document.getElementById('header-bg');
+        function onScroll() {
+            const show = window.scrollY > 30;
+            headerBg.classList.toggle('opacity-0', !show);
+            headerBg.classList.toggle('opacity-100', show);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+</body>
+
+</html>

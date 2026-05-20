@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGLÉA | L'Évènement - Bordeaux</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ag-blue: #2446F1;
+            --ag-light-blue: #7EA0FD;
+        }
+
+        .font-title {
+            font-family: 'Cormorant Garamond', serif;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .font-body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .text-ag-blue {
+            color: var(--ag-blue);
+        }
+
+        .bg-ag-blue {
+            background-color: var(--ag-blue);
+        }
+
+        .nav-link {
+            transition: color 0.25s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--ag-blue);
+        }
+
+        /* Dégradé HERO */
+        .hero-gradient {
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0) 70%,
+                    rgba(255, 255, 255, 1) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black font-body">
+
+    <!-- NAVIGATION -->
+    <nav id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div id="header-bg"
+            class="absolute inset-0 bg-white/70 opacity-0 transition-opacity duration-300 pointer-events-none border-b border-black/10">
+        </div>
+
+        <div class="relative px-8 py-6 flex justify-between items-center">
+            <a href="gemini.html">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-8 w-auto" />
+            </a>
+
+            <div class="space-x-8 uppercase text-xs tracking-widest text-black">
+                <a href="nos talents.html" class="nav-link">NOS TALENTS</a>
+                <a href="cagnotte.html" class="nav-link">CAGNOTTE</a>
+                <a href="participer.html" class="nav-link">PARTICIPER</a>
+                <a href="evenement.html" class="nav-link">ÉVÈNEMENT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO EVENT -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="image/5579d8a377ed31a55bd079fb00409822.jpg" alt="Agléa Event"
+            class="absolute inset-0 w-full h-full object-cover grayscale opacity-90" />
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+
+        <div class="relative text-center z-10 px-6 max-w-4xl">
+            <p class="text-ag-blue uppercase tracking-[0.4em] text-[10px] font-bold mb-6">Un Défilé Engagé</p>
+            <h1 class="font-title text-6xl md:text-7xl mb-6 italic text-black">Le Défilé</h1>
+            <p class="text-xs uppercase tracking-[0.3em] text-gray-700 opacity-80">Agléa × Les Liens du Cœur</p>
+        </div>
+    </section>
+
+    <!-- LE CONCEPT -->
+    <section class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div class="space-y-8">
+                <div class="inline-block border-l-2 border-ag-blue pl-6">
+                    <span class="text-[10px] uppercase tracking-widest text-ag-blue font-bold">L'Engagement</span>
+                    <h2 class="font-title text-4xl mt-2 italic">L'Art de donner</h2>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed font-light">
+                    Pour cette édition spéciale, AGLÉA s'unit à l'association <strong
+                        class="font-semibold text-black">Les Liens du Cœur</strong>.
+                    Plus qu'un simple défilé de mode, cet événement est une main tendue, fusionnant l'esthétique pure et
+                    l'élan de solidarité bordelais.
+                </p>
+                <div class="pt-4">
+                    <p class="text-sm border-t border-black/10 pt-6 opacity-60 italic">
+                        "La mode n'est pas seulement faite pour embellir les corps, mais aussi pour soutenir les cœurs."
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-ag-blue/5 rounded-full blur-3xl"></div>
+                <img src="image/DSC03084.jpg" alt="Agléa Engagement"
+                    class="relative z-10 w-full aspect-[4/5] object-cover grayscale brightness-90 shadow-2xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- LES LIENS DU COEUR -->
+    <section class="py-24 bg-gray-50 border-y border-black/5">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="mb-12">
+                <h2 class="font-title text-4xl mb-6">Les Liens du Cœur</h2>
+                <div class="w-12 h-[1px] bg-ag-blue mx-auto mb-10"></div>
+                <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                    Active à Bordeaux, l'association soutient les enfants nés avec des malformations cardiaques et leurs
+                    familles. Chaque invitation, chaque don lors de la soirée contribue directement au projet de la
+                    <strong class="text-black">Maison des Liens du Cœur</strong> au CHU de Haut-Lévêque.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+                <div class="p-6 bg-white shadow-sm border border-black/5 hover:border-ag-blue/30 transition">
+                    <h4 class="font-title text-lg mb-4 italic">Soutien</h4>
+                    <p class="text-xs leading-relaxed opacity-70">Accompagnement quotidien des familles durant les
+                        périodes d'hospitalisation.</p>
+                </div>
+                <div class="p-6 bg-white shadow-sm border border-black/5 hover:border-ag-blue/30 transition">
+                    <h4 class="font-title text-lg mb-4 italic">Innovation</h4>
+                    <p class="text-xs leading-relaxed opacity-70">Aide à la recherche médicale et mise en place de
+                        structures d'accueil innovantes.</p>
+                </div>
+                <div class="p-6 bg-white shadow-sm border border-black/5 hover:border-ag-blue/30 transition">
+                    <h4 class="font-title text-lg mb-4 italic">Partage</h4>
+                    <p class="text-xs leading-relaxed opacity-70">Organisation d'événements culturels et sportifs pour
+                        briser l'isolement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TALENTS BORDELAIS -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-end justify-between gap-8 mb-16">
+            <h2 class="font-title text-5xl md:text-6xl leading-tight">La Scène<br><span
+                    class="text-ag-blue italic">Bordelaise</span></h2>
+            <p class="text-xs uppercase tracking-[0.3em] opacity-40 pb-4">Indépendance & Créativité</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1px bg-black/5 border border-black/5">
+            <div class="bg-white p-10 group hover:bg-ag-blue hover:text-white transition-all duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-50 block mb-6">01</span>
+                <h3 class="font-title text-2xl mb-4 italic">Créateurs Indépendants</h3>
+                <p class="text-sm font-light opacity-70 group-hover:opacity-100 transition">Une sélection de designers
+                    locaux présentant des pièces uniques aux thèmes liés au cœur et à la vie.</p>
+            </div>
+            <div class="bg-white p-10 group hover:bg-ag-blue hover:text-white transition-all duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-50 block mb-6">02</span>
+                <h3 class="font-title text-2xl mb-4 italic">Mannequins Émergents</h3>
+                <p class="text-sm font-light opacity-70 group-hover:opacity-100 transition">Des visages frais et des
+                    personnalités fortes issus de notre agence, portant avec fierté cet engagement.</p>
+            </div>
+            <div class="bg-white p-10 group hover:bg-ag-blue hover:text-white transition-all duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-50 block mb-6">03</span>
+                <h3 class="font-title text-2xl mb-4 italic">Artistes Invités</h3>
+                <p class="text-sm font-light opacity-70 group-hover:opacity-100 transition">Scénographes et techniciens
+                    bordelais s'unissant pour créer une expérience immersive inoubliable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFOS PRATIQUES -->
+    <section class="pb-24 px-6 max-w-4xl mx-auto">
+
+        <div class="bg-ag-blue text-white p-12 text-center space-y-8 rounded-sm shadow-xl">
+            <h2 class="font-title text-3xl italic">Informations Pratiques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 uppercase text-xs tracking-widest">
+                <div>
+                    <p class="opacity-60 mb-2 font-bold tracking-[0.2em]">Lieu</p>
+                    <p class="">Bordeaux, FR</p>
+                </div>
+                <div>
+                    <p class="opacity-60 mb-2 font-bold tracking-[0.2em]">Date</p>
+                    <p class="">Saison 2026</p>
+                </div>
+                <div>
+                    <p class="opacity-60 mb-2 font-bold tracking-[0.2em]">Accès</p>
+                    <p class="">Sur Invitation</p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col md:flex-row justify-center gap-6">
+                <a href="gemini.html#contact"
+                    class="inline-block border border-white px-10 py-4 uppercase text-xs tracking-widest hover:bg-white hover:text-ag-blue transition">
+                    Nous contacter
+                </a>
+                <a href="https://www.lesliensducoeur.org" target="_blank"
+                    class="inline-block bg-white text-ag-blue px-10 py-4 uppercase text-xs tracking-widest hover:bg-transparent hover:text-white border border-white transition">
+                    Soutenir l'asso
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto border-t border-white/20 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <img src="image/logo agléa.png" alt="AGLÉA" class="h-9 w-auto" />
+                <div class="flex gap-8 uppercase text-xs tracking-widest">
+                    <a href="https://www.instagram.com/aglea.agence/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">Instagram</a>
+                    <a href="https://www.tiktok.com/@agence.aglea" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">TikTok</a>
+                    <a href="mailto:agenceaglea@gmail.com" class="hover:text-ag-blue transition">Email</a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs uppercase tracking-widest mb-2">Bordeaux, France</p>
+                    <p class="text-xs opacity-50">© 2026 AGLÉA — Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SCROLL -->
+    <script>
+        const headerBg = document.getElementById('header-bg');
+        function onScroll() {
+            const show = window.scrollY > 30;
+            headerBg.classList.toggle('opacity-0', !show);
+            headerBg.classList.toggle('opacity-100', show);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+</body>
+
+</html>
