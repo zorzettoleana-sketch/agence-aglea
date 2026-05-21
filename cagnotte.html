@@ -84,7 +84,7 @@
 
         <div class="relative px-8 py-6 flex justify-between items-center">
             <a href="gemini.html">
-                <img src="image/logo agléa.png" alt="AGLÉA" class="h-8 w-auto" />
+                <img src="image/logo agléa.jpg" alt="AGLÉA" class="h-8 w-auto" />
             </a>
 
             <div class="space-x-8 uppercase text-xs tracking-widest text-black">
@@ -99,7 +99,7 @@
     <!-- HERO CAGNOTTE -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-100">
         <!-- Image placeholder, will be updated with generated image if available -->
-        <img src="image/cagnotte_hero.png" alt="Soutien Agléa"
+        <img src="image/cagnotte_hero.jpg" alt="Soutien Agléa"
             class="absolute inset-0 w-full h-full object-cover grayscale opacity-80 brightness-90 shadow-2xl" />
         <div class="absolute inset-0 hero-gradient"></div>
 
@@ -138,6 +138,70 @@
                         <span class="font-title text-lg italic">Objectif Maison des Parents</span>
                         <span class="text-ag-blue font-bold">35%</span>
                     </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="text-[10px] uppercase tracking-widest opacity-50">Campagne Saison 2026</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12">
+                <div class="bg-white p-8 border border-black/5 hover:shadow-xl transition-shadow">
+                    <h3 class="font-title text-xl mb-4 italic text-ag-blue">100% Transparence</h3>
+                    <p class="text-xs leading-relaxed text-gray-500">
+                        La totalité des fonds récoltés est reversée directement à l'association.</p>
+                </div>
+                <div class="bg-white p-8 border border-black/5 hover:shadow-xl transition-shadow">
+                    <h3 class="font-title text-xl mb-4 italic text-ag-blue">Impact Local</h3>
+                    <p class="text-xs leading-relaxed text-gray-500">
+                        Votre don agit directement sur le territoire bordelais, au sein de l'un des centres de
+                        cardiologie pédiatrique les plus importants de France.
+                    </p>
+                </div>
+                <div class="pt-6">
+                    <a href="https://www.lesliensducoeur.org" target="_blank"
+                        class="block w-full bg-ag-blue text-white text-center py-6 uppercase text-xs tracking-[0.3em] hover:bg-black transition duration-500">
+                        Accéder à la cagnotte officielle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto border-t border-white/20 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <img src="image/logo agléa.jpg" alt="AGLÉA" class="h-9 w-auto" />
+                <div class="flex gap-8 uppercase text-xs tracking-widest">
+                    <a href="https://www.instagram.com/aglea.agence/" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">Instagram</a>
+                    <a href="https://www.tiktok.com/@agence.aglea" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-ag-blue transition">TikTok</a>
+                    <a href="mailto:agenceaglea@gmail.com" class="hover:text-ag-blue transition">Email</a>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-xs uppercase tracking-widest mb-2">Bordeaux, France</p>
+                    <p class="text-xs opacity-50">© 2026 AGLÉA — Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT SCROLL -->
+    <script>
+        const headerBg = document.getElementById('header-bg');
+        function onScroll() {
+            const show = window.scrollY > 30;
+            headerBg.classList.toggle('opacity-0', !show);
+            headerBg.classList.toggle('opacity-100', show);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    </script>
+</body>
+
+</html>                    </div>
                     <div class="progress-bar">
                         <div class="progress-fill"></div>
                     </div>
